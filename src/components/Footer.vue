@@ -1,18 +1,8 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
- <!-- component -->
-<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
-<!-- Footer section with social media icons and newsletter sign-up -->
-<footer
-class="flex flex-col items-center dark:bg-neutral-900 bg-white text-center dark:dark:text-white fixed bottom-0 left-0 right-0">
+<footer class="flex flex-col items-center dark:bg-neutral-900 bg-white text-center dark:text-white">
   <div class="container px-6 pt-6">
     <!-- Social media icons container -->
     <div class="mb-6 flex justify-center">
