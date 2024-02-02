@@ -162,4 +162,7 @@ class="flex flex-col items-center dark:bg-neutral-900 bg-white text-center dark:
     border-color: #101011; /* Cor da borda ao passar o mouse ou focar no modo claro */
   }
 
+  footer {
+    z-index: 999; /* Adicione um índice Z alto para garantir que o footer esteja acima de outros elementos */
+  }
 </style>
