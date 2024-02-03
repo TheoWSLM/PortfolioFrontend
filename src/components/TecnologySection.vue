@@ -1,9 +1,9 @@
 <template>
   <div class="mt-3 justify-center items-center">
     <div v-for="(item, index) in items" :key="index" class="text-center">
-      <h1 :class="{ 'text-3xl': true, 'mt-5 ml-3': index !== 0, 'text-slate-500 ml-3': true }">{{ item.title }}</h1>
+      <h1 :class="{ 'text-3xl': true, 'mt-5 ml-3': index !== 0, 'text-gray-500 ml-3': true }">{{ item.title }}</h1>
       <div class="mt-10 flex justify-center mr-14">
-        <div v-for="(icon, iconKey) in item.icons" :key="iconKey" class=" max-w-36 dark:fill-white hover:fill-indigo-600" v-html="icon"></div>
+        <div v-for="(icon, iconKey) in item.icons" :key="iconKey" class=" max-w-36 dark:fill-white hover:fill-green-500" v-html="icon"></div>
       </div>
     </div>
   </div>
