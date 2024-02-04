@@ -14,11 +14,10 @@
             Theo 
             <br>Weber S.</br>
           </h2>                          
-          <p class="mt-4 pl-4 border-l-2 border-gray-500 text-sm text-gray-500 md:text-base">
-        Transformo código em inovação. Cada projeto 
-        <br>é um passo em direção a um futuro mais  </br>
-        <br> humano, mais tecnológico.</br> 
-        <br>Vamos juntos!</br>
+          <p class="mt-4 pl-4 border-l-2 border-gray-400 text-sm text-gray-500 md:text-base">
+            Desenvolvendo inovações através do código, 
+            <br>moldando um amanhã integrando tecnologia e humanidade. </br>
+          <br>Crio uma experiência online que inspira, conecta e transforma.</br>
           </p>            
         </div>      
       </div>

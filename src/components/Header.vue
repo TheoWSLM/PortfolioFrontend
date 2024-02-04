@@ -17,7 +17,7 @@
             :key="index"
             :href="icon.link"
             type="button"
-            class="mr-4 h-9 w-9 "
+            class="mr-8 h-9 w-9 "
             data-te-ripple-init
             data-te-ripple-color="light"
           >

@@ -1,7 +1,6 @@
 <template>
-
-
-    <div class="relative border-s mx-auto border-gray-200 dark:border-gray-700 flex-wrap items-center justify-center h-screen">
+  <div class=" flex items-center justify-center mb-10 ">
+    <div class=" w-8/12 relative border-s mx-auto border-gray-200 dark:border-gray-700 flex-wrap items-center justify-center">
       <ol class="border-gray-200 dark:border-gray-700 gap-8 md:gap-20">
         <li v-for="(item, index) in items" :key="index" class="mb-10 ms-6 fill-indigo-300">
             <span class="flex items-center absolute -start-3 justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -12,11 +11,21 @@
             <h3 class="flex items-center text-lg font-medium uppercase text-gray-500 dark:text-white">{{ item.title }} 
                 <span v-if="index === 0" class="bg-indigo-200 text-green-500 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
                   {{ item.tag }}</span></h3>
-          <time class="block mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{ item.date }}</time>
+          <div class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Descrição das atividades</div>
           <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{{ item.description }}</p>
         </li>
+        
       </ol>
+      <div class="flex justify-center">
+  <button type="button" class="items-center text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+    Baixar CV
+  </button>
+</div>
     </div>
+    
+</div>
+
+
   </template>
   
 
@@ -26,27 +35,23 @@ export default {
     return {
       items: [
         {
-          title: "Flowbite Application UI v2.0.0",
+          title: "ComplySoft Solutions",
           tag: "Atual",
-          date: "Released on January 13th, 2022",
-          description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-          link: "#"
+          description: "Atuo no desenvolvimento Full-Stack, utilizando Java, Spring Boot, C#, .NET, Angular, TypeScript e Vue.js conforme a necessidade do projeto. Participei da construção de softwares ERP focados em camadas B2B, B2C e C2B para o mercado de fitoterápicos. Domino MySQL e PostgreSQL na construção de bancos de dados relacionais, realizando manutenção de sistemas legados, implementação de novas funcionalidades e integração de API's externas. Opero em ambientes de nuvem AWS, desenvolvo interfaces no Figma e crio softwares de automação para operações internas. Tudo isso sob a metodologia ágil Kanban, gerenciada pela ferramenta Jira.",
+
         },
         {
-          title: "Flowbite Application UI v2.0.0",
+          title: "Projeto de extensão robótica UFPB",
           tag: "Latest",
-          date: "Released on January 13th, 2022",
-          description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-          link: "#"
+          description: "Desenvolvimentos de algoritmos em Python eficientes para controle e automação de dispositivos robóticos com utilização de ferramentas como PyRobot, ROS entre outros. Criação de interfaces de programação de especificação e funcionamento utilizando React para monitoramento e controle remoto.",
+
         },
         {
-          title: "Flowbite Application UI v2.0.0",
+          title: "Energia empreendimentos LTDA",
           tag: "Latest",
-          date: "Released on January 13th, 2022",
-          description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-          link: "#"
+          description: "Realização de medições de resistência de solo, construção de sistema controle e automação industrial, utilização do Power BI para construção de tabelas e documentações de análises, utilização de metodologia ágil.",
+
         },
-        // Adicione mais objetos conforme necessário
       ]
     };
   }
