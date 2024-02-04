@@ -10,7 +10,7 @@
     <div class="flex flex-col mt-6 justify-between lg:flex-row">
       <div class="mb-12 lg:mb-0">
         <div class="max-w-xl mb-6 ">
-          <h2 class="mt-36 text-7xl font-bold lg:text-8xl text-black lg:tracking-tight">
+          <h2 class="mt-36 text-7xl font-bold lg:text-8xl text-gray-800 lg:tracking-tight">
             Theo 
             <br>Weber S.</br>
           </h2>                          
@@ -30,4 +30,3 @@
   </div>
 </main>
 </template>
-<!-- emerald200 ou indico 200 -->

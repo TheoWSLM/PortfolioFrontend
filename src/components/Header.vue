@@ -10,21 +10,21 @@
     <img src="/logo.png" alt="Ícone Principal" class="h-11 dark:backdrop-invert">
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-    <div class="md:mr-auto">
-          <!-- Loop through icons data -->
-          <a
+    <div class="md:mr-auto flex">
+
+          <div
             v-for="(icon, index) in icons"
             :key="index"
             :href="icon.link"
             type="button"
-            class="mr-4 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal dark:text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            class="mr-4 h-9 w-9 "
             data-te-ripple-init
             data-te-ripple-color="light"
           >
             <svg :fill="icon.fill" :class="icon.hoverClass" :viewBox="icon.viewBox">
               <path :d="icon.path" />
             </svg>
-          </a>
+          </div>
         </div>
              <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
         <span class="sr-only">Open main menu</span>

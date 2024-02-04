@@ -13,20 +13,20 @@
 
     </div>
   </div>
-  <div class="mb-3 md:mr-auto">
-    <a
+  <div class="mb-3 md:mr-auto flex">
+    <div
             v-for="(icon, index) in icons"
             :key="index"
             :href="icon.link"
             type="button"
-            class="m-4 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal dark:text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+            class="m-4 h-9 w-9 "
             data-te-ripple-init
             data-te-ripple-color="light"
           >
             <svg :fill="icon.fill" :class="icon.hoverClass" :viewBox="icon.viewBox">
               <path :d="icon.path" />
             </svg>
-          </a>
+          </div>
     </div>
 </div>
 
