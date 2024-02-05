@@ -7,8 +7,8 @@ import TecnologySection from'@/components/TecnologySection.vue';
 </script>
 
 <template>
-<Banner></Banner>
-<AboutSection></AboutSection>
-<TecnologySection></TecnologySection>
-<ExperienceSection></ExperienceSection>
+<Banner id="banner"></Banner>
+<AboutSection id="about"></AboutSection>
+<TecnologySection id="technologies"></TecnologySection>
+<ExperienceSection id="experiences"></ExperienceSection>
 </template>

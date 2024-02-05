@@ -37,7 +37,7 @@ export default {
         {
           title: "ComplySoft Solutions",
           tag: "Atual",
-          description: "Atuo no desenvolvimento Full-Stack, utilizando Java, Spring Boot, C#, .NET, Angular, TypeScript e Vue.js conforme a necessidade do projeto. Participei da construção de softwares ERP focados em camadas B2B, B2C e C2B para o mercado de fitoterápicos. Domino MySQL e PostgreSQL na construção de bancos de dados relacionais, realizando manutenção de sistemas legados, implementação de novas funcionalidades e integração de API's externas. Opero em ambientes de nuvem AWS, desenvolvo interfaces no Figma e crio softwares de automação para operações internas. Tudo isso sob a metodologia ágil Kanban, gerenciada pela ferramenta Jira.",
+          description: "Atuo no desenvolvimento Fullstack, utilizando Java, Spring Boot, C#, .NET, Angular, TypeScript e Vue.js conforme a necessidade do projeto. Participei da construção de softwares ERP focados em camadas B2B, B2C e C2B para o mercado de fitoterápicos. Domino MySQL e PostgreSQL na construção de bancos de dados relacionais, realizando manutenção de sistemas legados, implementação de novas funcionalidades e integração de API's externas. Opero em ambientes de nuvem AWS, desenvolvo interfaces no Figma e crio softwares de automação para operações internas. Tudo isso sob a metodologia ágil Kanban, gerenciada pela ferramenta Jira.",
 
         },
         {

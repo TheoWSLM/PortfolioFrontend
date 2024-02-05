@@ -1,13 +1,13 @@
-<template>
-  <div class="mt-3 mb-20 justify-center items-center">
-    <div v-for="(item, index) in items" :key="index" class="text-center">
-      <h1 :class="{ 'text-3xl': true, 'mt-5 ml-3': index !== 0, 'text-gray-900 ml-3': true }">{{ item.title }}</h1>
+<template >
+  <div id="technologies" class="mt-3 mb-20 justify-center items-center">
+    <div v-for="(item, index) in items" :key="index" class="text-center">       
+        <h1 :class="{ 'text-3xl': true, 'mt-5 ml-3': index !== 0, 'text-gray-900 ml-3': true }">{{ item.title }}</h1>
       <div class="mt-10 flex justify-center " >
         <div
         v-for="(icon, index) in item.icons"
             :key="index"
             type="button"
-            class=" h-16 w-16 mx-10 mb-14"
+            class=" h-16 w-16 mx-10 mb-6"
             data-te-ripple-init
             data-te-ripple-color="light"
             @click="openModal(icon)"
@@ -18,6 +18,7 @@
             </svg>
           </div>
       </div>
+      <h2 :class="{ 'text-base text-gray-500 ml-3 mb-16': index !== 2, 'invisible': index ===2}">Clique nos ícones para saber mais!</h2>
     </div>
   </div>
 
@@ -62,8 +63,6 @@
                   </div>
           </div>
       </div> 
-
-      
 </template>
 
 

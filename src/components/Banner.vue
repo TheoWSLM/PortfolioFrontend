@@ -12,7 +12,7 @@
         <div class="max-w-xl mb-6 ">
           <h2 class="mt-36 text-7xl font-bold lg:text-8xl text-gray-800 lg:tracking-tight">
             Theo 
-            <br>Weber S.</br>
+            <br>Weber</br>
           </h2>                          
           <p class="mt-4 pl-4 border-l-2 border-gray-400 text-sm text-gray-500 md:text-base">
             Desenvolvendo inovações através do código, 

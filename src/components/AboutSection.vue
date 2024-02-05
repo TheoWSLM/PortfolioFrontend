@@ -22,13 +22,14 @@
           diferença e impactar positivamente o mundo. 
           <p class="text-base text-justify mt-4 text-gray-500 md:text-base">  Estou em busca de
           desafios que me permitam expandir meus conhecimentos, edificando
-          minha carreira profisional, contribuindo de forma inovadora para
+          minha carreira profissional, contribuindo de forma inovadora para
           equipes e projetos, me alinhando aos valores e propósitos que
           considero essenciais.</p>
         </p>
-        <button type="button" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-          Entre em contato</button>
-          <button type="button" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+        <a href="https://wa.me/5581994249752" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+  Entre em contato
+</a>
+  <button href="https://drive.google.com/file/d/1lJ07-Y6EcGP3ix_K-PCUiry9v2MwlCu9/view?usp=sharing" type="button" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
           Baixar CV</button>
       
       </div>
