@@ -9,6 +9,6 @@ import TecnologySection from'@/components/TecnologySection.vue';
 <template>
 <Banner id="banner"></Banner>
 <AboutSection id="about"></AboutSection>
-<TecnologySection id="technologies"></TecnologySection>
-<ExperienceSection id="experiences"></ExperienceSection>
+<TecnologySection></TecnologySection>
+<ExperienceSection id ="experiences" ></ExperienceSection>
 </template>

@@ -2,14 +2,14 @@
 </script>
 
 <template>
-<footer class="flex flex-col items-center dark:bg-neutral-900 bg-white text-center dark:text-white">
+<footer class="flex flex-col items-center dark:bg-transparent bg-white text-center dark:text-white">
   <div class="container px-6 pt-6">
     <div>
       <form action="">
         <div class="flex items-center justify-center gap-4 md:grid-cols-3">
   <div class="mb-3 md:ml-auto">
     <div>
-        <h1 class="text-lg md:text-2xl lg:text-2xl text-gray-500">Minhas redes sociais</h1>
+        <h1 class="text-lg md:text-2xl lg:text-2xl hidden md:block text-gray-500 dark:text-white">Minhas redes sociais</h1>
 
     </div>
   </div>
@@ -37,7 +37,7 @@
   <div
     class="w-full p-4 text-left"
     style="background-color: rgba(61, 61, 61, 0.17)">
-    Feito por Theo Weber 2024 
+    Feito por Theo Weber, 2024 ©️
   </div>
 </footer>
 </template>

@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js"
 ],
+darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},
   },

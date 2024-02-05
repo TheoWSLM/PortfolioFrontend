@@ -1,23 +1,31 @@
 <template >
   <div id="technologies" class="mt-3 mb-20 justify-center items-center">
     <div v-for="(item, index) in items" :key="index" class="text-center">       
-        <h1 :class="{ 'text-3xl': true, 'mt-5 ml-3': index !== 0, 'text-gray-900 ml-3': true }">{{ item.title }}</h1>
-      <div class="mt-10 flex justify-center " >
-        <div
-        v-for="(icon, index) in item.icons"
-            :key="index"
-            type="button"
-            class=" h-16 w-16 mx-10 mb-6"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-            @click="openModal(icon)"
-          >
-            <svg data-modal-target="timeline-modal" data-modal-toggle="timeline-modal" 
-            :fill="icon.fill" :class="icon.hoverClass" :viewBox="icon.viewBox">
-              <path :d="icon.path" />
-            </svg>
-          </div>
-      </div>
+        <h1 :class="{ 'text-3xl dark:text-white': true, 'mt-5 ml-3': index !== 0, 'text-gray-900 ml-3': true }">{{ item.title }}</h1>
+
+        <div class="mt-10 flex justify-center flex-wrap">
+  <div
+    v-for="(icon, index) in item.icons"
+    :key="index"
+    type="button"
+    class="h-16 w-16 mx-10 mb-6"
+    data-te-ripple-init
+    data-te-ripple-color="light"
+    @click="openModal(icon)"
+  >
+    <svg
+      data-modal-target="timeline-modal"
+      data-modal-toggle="timeline-modal"
+      :fill="icon.fill"
+      :class="icon.hoverClass"
+      :viewBox="icon.viewBox"
+      class="dark:fill-gray-500"
+    >
+      <path :d="icon.path" />
+    </svg>
+  </div>
+</div>
+
       <h2 :class="{ 'text-base text-gray-500 ml-3 mb-16': index !== 2, 'invisible': index ===2}">Clique nos ícones para saber mais!</h2>
     </div>
   </div>
@@ -29,7 +37,7 @@
               <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                       <!-- Modal header -->
                       <div class="flex items-center bg-indigo-300 justify-between p-4 md:p-5 border-b-2 rounded-t dark:border-gray-600">
-                        <h3 class="text-xl uppercase font-semibold text-gray-800 dark:text-white">
+                        <h3 class="text-xl uppercase font-semibold text-gray-800 dark:text-red">
   {{ selectedIconInfo ? selectedIconInfo.title : '' }}
 </h3>
                           <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="timeline-modal">
@@ -54,7 +62,7 @@
                                   <time class="text-sm text-justify mt-4 text-gray-500 md:text-sm mx-8 font-normal leading-none dark:text-gray-400 block mb-3 mr-4 ">{{ selectedIconInfo ? selectedIconInfo.experience : '' }}</time>
                               </li>
                           </ol>
-                          <button data-modal-toggle="timeline-modal" class="text-green-500 inline-flex w-full hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg justify-center text-sm px-5 py-2.5 text-center">
+                          <button data-modal-toggle="timeline-modal" class="text-green-500 dark:text-blue-500 inline-flex w-full hover:text-white border border-green-500 dark:border-blue-500 hover:bg-green-500 focus:ring-4 focus:outline-none dark:hover:bg-blue-500 focus:ring-green-300 font-medium rounded-lg justify-center text-sm px-5 py-2.5 text-center">
                           Ok
                           </button>
                         

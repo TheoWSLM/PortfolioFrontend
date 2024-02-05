@@ -1,6 +1,6 @@
 <template>
-  <div class=" flex items-center justify-center mb-10 ">
-    <div class=" w-8/12 relative border-s mx-auto border-gray-200 dark:border-gray-700 flex-wrap items-center justify-center">
+  <div class="flex items-center text-justify justify-center mb-10">
+    <div class="w-10/12 md:w-6/12 relative border-s mx-auto border-gray-200 dark:border-gray-700 flex-wrap items-center justify-center">
       <ol class="border-gray-200 dark:border-gray-700 gap-8 md:gap-20">
         <li v-for="(item, index) in items" :key="index" class="mb-10 ms-6 fill-indigo-300">
             <span class="flex items-center absolute -start-3 justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -17,9 +17,9 @@
         
       </ol>
       <div class="flex justify-center">
-  <button type="button" class="items-center text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+  <a href="https://drive.google.com/uc?export=download&id=1U28hNOGlYoH9zjMXIruethktRpgmEgNg" type="button" class="items-center text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
     Baixar CV
-  </button>
+  </a>
 </div>
     </div>
     
