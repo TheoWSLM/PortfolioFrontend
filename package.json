@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://TheoWSLM.github.io/PortfolioFrontend/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,9 +10,7 @@
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "test:unit": "cypress run --component",
-    "test:unit:dev": "cypress open --component",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "test:unit:dev": "cypress open --component"
   },
   "dependencies": {
     "flowbite": "^2.2.1",
