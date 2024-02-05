@@ -1,7 +1,7 @@
 <template>
 <main class="relative ">
   <div class=" inset-0">
-    <div class="absolute inset-0 bg-gradient-to-b dark:from-transparent dark:to-fuchsia-950 from-white to-indigo-300"></div>
+    <div class="absolute inset-0 bg-gradient-to-b dark:from-transparent dark:to-transparent from-white to-indigo-300"></div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute bottom-0 left-0 w-full">
   <path fill="#ffffff" fill-opacity="1" class="dark:fill-neutral-900" d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,122.7C672,117,768,171,864,208C960,245,1056,267,1152,240C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
 </svg>
@@ -15,7 +15,7 @@
             Theo 
             <br>Weber</br>
           </h2>                          
-          <p class="mt-4 pl-4 border-l-2 border-gray-400 text-sm text-gray-500 md:text-base dark:text-invert">
+          <p class="mt-4 pl-4 border-l-2 border-gray-400 text-sm text-gray-500 md:text-base dark:text-white">
             Desenvolvendo inovações através do código, 
             <br>moldando um amanhã integrando tecnologia e humanidade. </br>
           <br>Crio uma experiência online que inspira, conecta e transforma.</br>

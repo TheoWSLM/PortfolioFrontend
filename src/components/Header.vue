@@ -4,7 +4,7 @@
 
 <nav class=" absolute w-full z-20 top-0 start-0 dark:border-neutral-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+  <a class="flex items-center space-x-3 rtl:space-x-reverse hover:bg-transparent hover:no-underline">
     <img src="/logo.png" alt="Ícone Principal" class="h-11 dark:invert">
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -14,7 +14,7 @@
   :key="index"
   :href="icon.link"
   type="button"
-  class="mr-8 h-9 w-9 hover:bg-transparent hover:no-underline dark:text-white"
+  class=" h-9 w-9 mr-4 md:mr-8 hover:bg-transparent hover:no-underline dark:text-white"
   data-te-ripple-init
   data-te-ripple-color="light"
 >

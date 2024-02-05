@@ -1,5 +1,5 @@
 <template>
-  <div class="flex dark:bg-transparent flex-wrap justify-center mb-32 ">
+  <div class="flex dark:bg-transparent flex-wrap justify-center mt-7 mb-32 ">
     <div class="w-2/3 sm:w-1/2 md:w-5/12 lg:w-4/12 mb-12 hover-grayscale-0">
       <div class="flex items-center relative"> 
         <div class="hidden md:block absolute border-l-2 border-gray-300 h-3/4 right-0 top-0 bottom-0 mx-2"></div>
