@@ -30,7 +30,7 @@
         <a href="https://wa.me/5581994249752" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:text-blue-500 dark:hover:text-white dark:border-blue-500 dark:hover:bg-blue-500 dark:focus:ring-blue-800">
   Entre em contato
 </a>
-  <a href="https://drive.google.com/uc?export=download&id=1U28hNOGlYoH9zjMXIruethktRpgmEgNg" type="a" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+  <a href="https://drive.google.com/uc?export=download&id=16PzOKzAf7PvAhqr0aF0NQXKE9XRPemXH" type="a" class="mt-6 text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
           Baixar CV</a>
       </div>
       </div>
