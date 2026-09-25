@@ -1,32 +1,26 @@
+<script setup>
+const base = import.meta.env.BASE_URL
+</script>
+
 <template>
-<main class="relative ">
-  <div class=" inset-0">
-    <div class="absolute inset-0 bg-gradient-to-b dark:from-transparent dark:to-transparent from-white to-indigo-300"></div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute bottom-0 left-0 w-full">
-  <path fill="#ffffff" fill-opacity="1" class="dark:fill-neutral-900" d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,122.7C672,117,768,171,864,208C960,245,1056,267,1152,240C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-</svg>
-
-  </div>
-  <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mb-20 relative">
-    <div class="flex flex-col mt-6 justify-between lg:flex-row">
-      <div class="mb-12 lg:mb-0">
-        <div class="max-w-xl mb-6 ">
-          <h2 class="mt-36 text-7xl font-bold lg:text-8xl dark:text-white text-gray-800 lg:tracking-tight">
-            Theo 
-            <br>Weber</br>
-          </h2>                          
-          <p class="mt-4 pl-4 border-l-2 border-gray-400 text-sm text-gray-500 md:text-base dark:text-white">
-            Desenvolvendo inovações através do código, 
-            <br>moldando um amanhã integrando tecnologia e humanidade. </br>
-          <br>Crio uma experiência online que inspira, conecta e transforma.</br>
-          </p>            
-        </div>      
+  <section id="inicio" class="hero section-anchor">
+    <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> AI ENGINEER · FULL STACK · MLOPS</div>
+        <h1>Construo IA que <em>funciona</em> no mundo real<span class="period">.</span></h1>
+        <p class="hero-description">Sou Theo Weber. Transformo modelos de linguagem em produtos confiáveis: agentes, RAG e APIs que vão da ideia à produção, com atenção à qualidade de cada resposta.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#especialidades">Explore meu trabalho <span aria-hidden="true">↗</span></a><a class="button button-quiet" :href="`${base}dev-theo-weber.pdf`" download="Theo-Weber-Curriculo.pdf">Baixar currículo <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-meta"><span>Python & FastAPI</span><span>LangGraph & LangChain</span><span>LLM Evaluation</span></div>
       </div>
-      <div class="px-5 text-center lg:w-6/12 relative">
-  <img src="/icon-main.png" alt="Ícone Principal" class="mx-auto">
-</div>
-
+      <div class="hero-art">
+        <div class="portrait-spotlight"><img :src="`${base}theo-portrait.png`" alt="Foto de Theo Weber" fetchpriority="high"></div>
+        <div class="hero-orbit hero-orbit-one"></div><div class="hero-orbit hero-orbit-two"></div>
+        <div class="floating-chip chip-one"><span class="chip-icon">✳</span><span>AI SYSTEMS<br><strong>BUILT TO SHIP</strong></span></div>
+        <div class="floating-chip chip-two"><span class="status-dot"></span> PRODUCTION READY</div>
+        <div class="floating-chip chip-three">{ Python · LangGraph · FastAPI }</div>
+      </div>
     </div>
-  </div>
-</main>
+    <div class="shell hero-footer"><span>ENGENHARIA DE SOFTWARE + INTELIGÊNCIA ARTIFICIAL</span><a href="#sobre">EXPLORE <span aria-hidden="true">↓</span></a></div>
+  </section>
 </template>

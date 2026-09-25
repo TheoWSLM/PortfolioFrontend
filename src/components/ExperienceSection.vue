@@ -1,59 +1,11 @@
-<template>
-  <div class="flex items-center text-justify justify-center mb-10">
-    <div class="w-10/12 md:w-6/12 relative border-s mx-auto border-gray-200 dark:border-gray-700 flex-wrap items-center justify-center">
-      <ol class="border-gray-200 dark:border-gray-700 gap-8 md:gap-20">
-        <li v-for="(item, index) in items" :key="index" class="mb-10 ms-6 fill-indigo-300">
-            <span class="flex items-center absolute -start-3 justify-center w-6 h-6 bg-indigo-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-              <svg class="w-2.5 h-2.5  text-green-500 dark:text-blue-300 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-              </svg>
-            </span>
-            <h3 class="flex items-center text-lg font-medium uppercase text-gray-500 dark:text-white">{{ item.title }} 
-                <span v-if="index === 0" class="bg-indigo-200 text-green-500 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">
-                  {{ item.tag }}</span></h3>
-          <div class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Descrição das atividades</div>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{{ item.description }}</p>
-        </li>
-        
-      </ol>
-      <div class="flex justify-center">
-  <a href="https://drive.google.com/uc?export=download&id=1SxtRFQFm6YZcwFRlyquvm3MSQELTbdMb" type="button" class="items-center text-green-500 hover:text-white border border-green-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-    Baixar CV
-  </a>
-</div>
-    </div>
-    
-</div>
-
-
-  </template>
-  
-
-  <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          title: "ComplySoft Solutions",
-          tag: "Atual",
-          description: "Atuo no desenvolvimento Fullstack, utilizando Java, Spring Boot, C#, .NET, Angular, TypeScript e Vue.js conforme a necessidade do projeto. Participei da construção de softwares ERP focados em camadas B2B, B2C e C2B para o mercado de fitoterápicos. Domino MySQL e PostgreSQL na construção de bancos de dados relacionais, realizando manutenção de sistemas legados, implementação de novas funcionalidades e integração de API's externas. Opero em ambientes de nuvem AWS, desenvolvo interfaces no Figma e crio softwares de automação para operações internas. Tudo isso sob a metodologia ágil Kanban, gerenciada pela ferramenta Jira.",
-
-        },
-        {
-          title: "Projeto de extensão robótica UFPB",
-          tag: "Latest",
-          description: "Desenvolvimentos de algoritmos em Python eficientes para controle e automação de dispositivos robóticos com utilização de ferramentas como PyRobot, ROS entre outros. Criação de interfaces de programação de especificação e funcionamento utilizando React para monitoramento e controle remoto.",
-
-        },
-        {
-          title: "Energia empreendimentos LTDA",
-          tag: "Latest",
-          description: "Realização de medições de resistência de solo, construção de sistema controle e automação industrial, utilização do Power BI para construção de tabelas e documentações de análises, utilização de metodologia ágil.",
-
-        },
-      ]
-    };
-  }
-}
+<script setup>
+const base = import.meta.env.BASE_URL
+const roles = [
+  { company: 'Pontotel', title: 'Full Stack AI / MLOps Engineer', period: 'ABR 2024 — ATUAL', number: '01', text: 'Desenvolvo agentes conversacionais e aplicações RAG com Python, LangGraph e LangChain. Crio APIs com FastAPI, experiências em React e Vue, integrações corporativas e fluxos de streaming.', detail: 'Guardrails, avaliação de LLMs, observabilidade de latência, custo e qualidade; entrega em AWS com Docker, Kubernetes, ECS e CI/CD.', tags: ['Python', 'LangGraph', 'FastAPI', 'RAG', 'MLOps'] },
+  { company: 'CPLY Solutions', title: 'Desenvolvedor Full Stack', period: 'MAR 2020 — ABR 2024', number: '02', text: 'Construí APIs e interfaces para operações B2B, B2C e C2B utilizadas por mais de 20 clientes. Trabalhei com Python, Node.js, Vue.js, PostgreSQL e MongoDB.', detail: 'Conduzi entregas da arquitetura à produção, incluindo integrações de pagamento, Docker e pipelines de CI/CD.', tags: ['Python', 'Node.js', 'Vue.js', 'PostgreSQL'] },
+]
 </script>
+
+<template>
+  <section id="experiencia" class="experience-section section-anchor section-pad"><div class="shell"><div class="section-label"><span>03 / TRAJETÓRIA</span><span class="label-rule"></span></div><div class="section-heading-row"><h2>Experiência que<br><em>vira produto.</em></h2><p>Do desenvolvimento full stack à engenharia de IA aplicada em produção.</p></div><div class="experience-list"><article v-for="role in roles" :key="role.company" class="experience-item"><div class="experience-index">{{ role.number }} <span>↗</span></div><div class="experience-main"><div class="experience-title-line"><h3>{{ role.company }}</h3><span class="experience-period">{{ role.period }}</span></div><span class="experience-role">{{ role.title }}</span><p>{{ role.text }}</p><p class="experience-detail">{{ role.detail }}</p><div class="tag-row"><span v-for="tag in role.tags" :key="tag">{{ tag }}</span></div></div></article></div><div class="education-strip"><span class="education-icon">✳</span><div><small>FORMAÇÃO</small><strong>Engenharia Elétrica · UFPB</strong><strong>Pós-graduação em Engenharia de IA e MLOps · PUC Minas</strong></div><a :href="`${base}dev-theo-weber.pdf`" download="Theo-Weber-Curriculo.pdf">Currículo completo ↗</a></div></div></section>
+</template>

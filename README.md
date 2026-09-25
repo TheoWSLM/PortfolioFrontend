@@ -1,51 +1,22 @@
-# portifolio-frontend
+# Theo Weber · Portfólio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfólio pessoal de AI Engineering, desenvolvido em Vue 3 e Vite.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Desenvolvimento
 
 ```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm ci
 npm run dev
 ```
 
-### Compile and Minify for Production
+O Vite usa `/PortfolioFrontend/` como caminho base para funcionar no GitHub Pages. A URL local aparece no terminal ao iniciar o servidor.
+
+## Publicação
+
+Um push na branch `main` aciona o workflow em `.github/workflows/deploy-pages.yml`, que executa o build e publica `dist` em <https://theowslm.github.io/PortfolioFrontend/>.
 
 ```sh
 npm run build
 ```
 
-### Run Headed Component Tests with [Cypress Component Testing](https://on.cypress.io/component)
-
-```sh
-npm run test:unit:dev # or `npm run test:unit` for headless testing
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
+O currículo oferecido para download fica em `public/dev-theo-weber.pdf`. A foto editada para o topo fica em `public/theo-portrait.png`; a arte original permanece em `public/icon-main.png`.
