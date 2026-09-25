@@ -1,11 +1,79 @@
 <script setup>
-const base = import.meta.env.BASE_URL
+const base = import.meta.env.BASE_URL;
 const roles = [
-  { company: 'Pontotel', title: 'Full Stack AI / MLOps Engineer', period: 'ABR 2024 — ATUAL', number: '01', text: 'Desenvolvo agentes conversacionais e aplicações RAG com Python, LangGraph e LangChain. Crio APIs com FastAPI, experiências em React e Vue, integrações corporativas e fluxos de streaming.', detail: 'Guardrails, avaliação de LLMs, observabilidade de latência, custo e qualidade; entrega em AWS com Docker, Kubernetes, ECS e CI/CD.', tags: ['Python', 'LangGraph', 'FastAPI', 'RAG', 'MLOps'] },
-  { company: 'CPLY Solutions', title: 'Desenvolvedor Full Stack', period: 'MAR 2020 — ABR 2024', number: '02', text: 'Construí APIs e interfaces para operações B2B, B2C e C2B utilizadas por mais de 20 clientes. Trabalhei com Python, Node.js, Vue.js, PostgreSQL e MongoDB.', detail: 'Conduzi entregas da arquitetura à produção, incluindo integrações de pagamento, Docker e pipelines de CI/CD.', tags: ['Python', 'Node.js', 'Vue.js', 'PostgreSQL'] },
-]
+  {
+    company: "Pontotel",
+    title: "Full Stack AI / MLOps Engineer",
+    period: "ABR 2024 — ATUAL",
+    number: "01",
+    text: "Desenvolvo agentes conversacionais e aplicações RAG com Python, LangGraph e LangChain. Crio APIs com FastAPI, experiências em React e Vue, integrações corporativas e fluxos de streaming.",
+    detail:
+      "Guardrails, avaliação de LLMs, observabilidade de latência, custo e qualidade; entrega em AWS com Docker, Kubernetes, ECS e CI/CD.",
+    tags: ["Python", "LangGraph", "FastAPI", "RAG", "MLOps"],
+  },
+  {
+    company: "CPLY Solutions",
+    title: "Desenvolvedor Full Stack",
+    period: "MAR 2020 — ABR 2024",
+    number: "02",
+    text: "Construí APIs e interfaces para operações B2B, B2C e C2B utilizadas por mais de 20 clientes. Trabalhei com Python, Node.js, Vue.js, PostgreSQL e MongoDB.",
+    detail:
+      "Conduzi entregas da arquitetura à produção, incluindo integrações de pagamento, Docker e pipelines de CI/CD.",
+    tags: ["Python", "Node.js", "Vue.js", "PostgreSQL"],
+  },
+];
 </script>
 
 <template>
-  <section id="experiencia" class="experience-section section-anchor section-pad"><div class="shell"><div class="section-label"><span>03 / TRAJETÓRIA</span><span class="label-rule"></span></div><div class="section-heading-row"><h2>Experiência que<br><em>vira produto.</em></h2><p>Do desenvolvimento full stack à engenharia de IA aplicada em produção.</p></div><div class="experience-list"><article v-for="role in roles" :key="role.company" class="experience-item"><div class="experience-index">{{ role.number }} <span>↗</span></div><div class="experience-main"><div class="experience-title-line"><h3>{{ role.company }}</h3><span class="experience-period">{{ role.period }}</span></div><span class="experience-role">{{ role.title }}</span><p>{{ role.text }}</p><p class="experience-detail">{{ role.detail }}</p><div class="tag-row"><span v-for="tag in role.tags" :key="tag">{{ tag }}</span></div></div></article></div><div class="education-strip"><span class="education-icon">✳</span><div><small>FORMAÇÃO</small><strong>Engenharia Elétrica · UFPB</strong><strong>Pós-graduação em Engenharia de IA e MLOps · PUC Minas</strong></div><a :href="`${base}dev-theo-weber.pdf`" download="Theo-Weber-Curriculo.pdf">Currículo completo ↗</a></div></div></section>
+  <section
+    id="experiencia"
+    class="experience-section section-anchor section-pad"
+  >
+    <div class="shell">
+      <div class="section-label">
+        <span>03 / TRAJETÓRIA</span><span class="label-rule"></span>
+      </div>
+      <div class="section-heading-row">
+        <h2>Experiência que<br /><em>vira produto.</em></h2>
+        <p>
+          Do desenvolvimento full stack à engenharia de IA aplicada em produção.
+        </p>
+      </div>
+      <div class="experience-list">
+        <article
+          v-for="role in roles"
+          :key="role.company"
+          class="experience-item"
+        >
+          <div class="experience-index">{{ role.number }} <span>↗</span></div>
+          <div class="experience-main">
+            <div class="experience-title-line">
+              <h3>{{ role.company }}</h3>
+              <span class="experience-period">{{ role.period }}</span>
+            </div>
+            <span class="experience-role">{{ role.title }}</span>
+            <p>{{ role.text }}</p>
+            <p class="experience-detail">{{ role.detail }}</p>
+            <div class="tag-row">
+              <span v-for="tag in role.tags" :key="tag">{{ tag }}</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="education-strip">
+        <span class="education-icon">✳</span>
+        <div>
+          <small>FORMAÇÃO</small><strong>Engenharia Elétrica · UFPB</strong
+          ><strong
+            >Pós-graduação em Engenharia de IA e MLOps · PUC Minas</strong
+          >
+        </div>
+        <a
+          :href="`${base}dev-theo-weber.pdf`"
+          download="Theo-Weber-Curriculo.pdf"
+          >Currículo completo ↗</a
+        >
+      </div>
+    </div>
+  </section>
 </template>
